@@ -26,7 +26,7 @@ const App = () => {
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
-      id: nanoid,
+      id: nanoid(),
       text: text,
       date: date.toLocaleDateString(),
     };
@@ -35,7 +35,7 @@ const App = () => {
   };
 
   const deleteNote = (id) => {
-    const newNotes = notes.filter((note) => note.id != id);
+    const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
   };
 
