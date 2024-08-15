@@ -42,6 +42,7 @@ code {
   and become responsive; shouldnt be smaller than 250px but shouldnt be larger
   than 1 fractional unit*/
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  white-space: pre-line;
 }
 
 .note.new {
@@ -79,6 +80,7 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .note-footer {
